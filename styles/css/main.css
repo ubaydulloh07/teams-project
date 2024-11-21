@@ -153,4 +153,104 @@
 }
 .continer footer .lastest ul li a:hover {
   color: #ff9f43;
+}
+
+@media only screen and (max-width: 720px) {
+  .continer {
+    width: 720px;
+    height: auto;
+  }
+  .continer nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+  }
+  .continer header ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .continer header ul .button {
+    position: absolute;
+  }
+  .continer header ul li {
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: -1;
+  }
+  .continer header ul button {
+    margin-top: 20px;
+  }
+  .continer .mid_text {
+    top: 0;
+    width: 700px;
+    height: auto;
+  }
+  .continer .mid_text h1 {
+    position: relative;
+    font-size: 30px;
+    right: 100px;
+  }
+  .continer .mid_text p {
+    font-size: 12px;
+  }
+  .continer .mid_text h1 {
+    position: relative;
+    left: 0;
+    font-size: 40px;
+  }
+  .continer .mid_text p {
+    font-size: 16px;
+  }
+  .continer .middle {
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  .continer .middle .logo {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .continer .middle .logo h2 {
+    font-size: 20px;
+    left: 0;
+  }
+  .continer .middle .logo .img1 {
+    display: block;
+    margin: auto;
+  }
+  .continer .middle .logo .img2 {
+    display: block;
+    margin: 0 auto;
+  }
+  .continer .middle .avatar {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .continer .middle .avatar h2 {
+    font-size: 20px;
+    left: 0;
+  }
+  .continer .middle .avatar .img3 {
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  footer .lastest {
+    position: relative;
+    left: 0;
+  }
+  footer .lastest ul {
+    gap: 10px;
+  }
+  footer .lastest ul li a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

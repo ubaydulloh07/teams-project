@@ -5,18 +5,19 @@
 }
 
 .continer {
-  width: 1300px;
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
-  background-color: #1C1C28;
-  height: 1900px;
+  background-color: #1c1c28;
+  height: auto;
   border-radius: 20px;
-  border: 10px solid #6966FF;
-  font-family: space Mono;
+  border: 10px solid #6966ff;
+  font-family: "Space Mono", monospace;
 }
 .continer header ul {
   list-style: none;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   color: white;
@@ -29,14 +30,14 @@
 }
 .continer header ul li a {
   text-decoration: none;
-  color: #C8C7D8;
+  color: #c8c7d8;
 }
 .continer header ul li a:hover {
   color: #9e9dab;
 }
 .continer header ul button {
-  padding: 15px 20px;
-  background-color: #6966FF;
+  padding: 10px 15px;
+  background-color: #6966ff;
   color: white;
   border: none;
   border-radius: 10px;
@@ -47,225 +48,165 @@
   background-color: #3532fa;
 }
 .continer .mid_text {
-  width: 1250px;
-  height: 240px;
-  position: relative;
-  top: 70px;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
 }
 .continer .mid_text h1 {
   color: white;
-  font-size: 60px;
+  font-size: 40px;
 }
 .continer .mid_text p {
-  color: #C8C7D8;
+  color: #c8c7d8;
 }
 .continer .middle {
-  width: 800px;
-  height: 700px;
-  margin: 0 auto;
-}
-.continer .middle .logo {
   width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 .continer .middle .logo h2 {
   color: white;
-  font-size: 40px;
-  position: relative;
-  left: 350px;
+  font-size: 30px;
+  text-align: center;
 }
-.continer .middle .logo .img1 {
-  gap: 16px;
-  display: flex;
-}
+.continer .middle .logo .img1,
 .continer .middle .logo .img2 {
-  gap: 16px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.continer .middle .logo .img1 div,
+.continer .middle .logo .img2 div {
+  text-align: center;
+}
+.continer .middle .logo .img1 div img,
+.continer .middle .logo .img2 div img {
+  max-width: 100%;
+}
+.continer .middle .logo .img1 div p,
+.continer .middle .logo .img2 div p {
+  color: white;
 }
 .continer .middle .avatar {
   color: white;
-  width: 100%;
-  height: 50%;
 }
 .continer .middle .avatar h2 {
-  position: relative;
-  left: 310px;
-  font-size: 40px;
+  text-align: center;
+  font-size: 30px;
 }
 .continer .middle .avatar .img3 {
-  gap: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.continer .middle .avatar .img3 div {
+  text-align: center;
+}
+.continer .middle .avatar .img3 div img {
+  max-width: 100%;
+}
+.continer .middle .avatar .img3 div p {
+  color: white;
 }
 .continer .middle .text {
-  position: relative;
-  top: 100px;
+  margin-top: 50px;
 }
 .continer .middle .text h3 {
   color: white;
   font-size: 20px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .continer .middle .text p {
-  color: #C8C7D8;
+  color: #c8c7d8;
+  text-align: center;
 }
 .continer footer {
   display: flex;
-  width: 100%;
-  height: 25%;
-  position: relative;
-  top: 700px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-image: url(../style/img/Grid.svg);
+  background-size: cover;
 }
 .continer footer .lastest {
   display: flex;
-  position: relative;
-  left: 100px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.continer footer .lastest img {
+  max-width: 10%;
 }
 .continer footer .lastest ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-  position: relative;
-  top: 40px;
-  left: 10px;
-}
-.continer footer .lastest ul button {
-  width: 120px;
-  height: 50px;
-  background-color: #6966FF;
-  color: #fff;
-  border-radius: 10px;
-  transition: 0.5s ease;
-  position: relative;
-  bottom: 10px;
-}
-.continer footer .lastest ul button:hover {
-  background-color: #444187;
-  color: #fff;
-  border: none;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .continer footer .lastest ul li a {
-  font-size: 16px;
-  font-family: space mono;
-  color: #fff;
+  font-size: 14px;
+  font-family: "Space Mono", monospace;
+  color: #c8c7d8;
   text-decoration: none;
   transition: color 0.3s ease;
-  color: #C8C7D8;
 }
 .continer footer .lastest ul li a:hover {
   color: #ff9f43;
 }
+.continer footer .lastest div a img {
+  max-width: 30px;
+}
 
-@media only screen and (max-width: 680px) {
-  body .continer {
-    width: 720px;
-    height: 3000px;
-  }
-  body .continer nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-  }
-  body .continer header ul {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 1024px) {
+  .continer {
     padding: 10px;
   }
-  body .continer header ul .button {
-    position: absolute;
+  .mid_text h1 {
+    font-size: 35px;
   }
-  body .continer header ul li {
-    margin-bottom: 10px;
-    position: absolute;
-    z-index: -1;
-  }
-  body .continer header ul button {
-    margin-top: 20px;
-  }
-  body .continer .mid_text {
-    top: 0;
-    width: 700px;
-    height: auto;
-  }
-  body .continer .mid_text h1 {
-    position: relative;
-    font-size: 30px;
-    right: 100px;
-    flex-direction: column;
-  }
-  body .continer .mid_text p {
-    font-size: 12px;
-    position: relative;
-    font-size: 30px;
-    right: 100px;
-    flex-direction: column;
-  }
-  body .continer .mid_text h1 {
-    position: relative;
-    left: 0;
-    font-size: 40px;
-  }
-  body .continer .mid_text p {
+  .mid_text p {
     font-size: 16px;
   }
-  body .continer .middle {
-    width: 50%;
-    height: auto;
-    margin: auto;
+  .middle .logo h2,
+  .middle .avatar h2 {
+    font-size: 25px;
   }
-  body .continer .middle .logo {
-    width: 100%;
-    position: relative;
-    margin: auto;
+  footer .lastest img {
+    max-width: 15%;
   }
-  body .continer .middle .logo h2 {
-    font-size: 20px;
-    left: 0;
-  }
-  body .continer .middle .logo .img1 {
-    display: block;
-    margin: auto;
-  }
-  body .continer .middle .logo .img2 {
-    display: block;
-    margin: 0 auto;
-  }
-  body .continer .middle .avatar {
-    width: 100%;
-    position: relative;
-    margin: auto;
-  }
-  body .continer .middle .avatar h2 {
-    font-size: 20px;
-    left: 0;
-  }
-  body .continer .middle .avatar .img3 {
-    display: block;
-    margin: 0 auto;
-  }
-  body footer {
-    width: 100%;
-    height: auto;
-  }
-  body footer .lastest {
-    position: relative;
-    left: 300px;
-    bottom: 500px;
-    justify-content: center;
-  }
-  body footer .lastest ul {
+}
+@media (max-width: 768px) {
+  header ul {
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-    position: relative;
-    left: 300px;
-    align-items: center;
   }
-  body footer .lastest ul li {
-    align-items: center;
+  header ul li {
+    font-size: 18px;
   }
-  body footer .lastest ul li a {
-    align-items: center;
+  header ul button {
     font-size: 14px;
+    padding: 8px 12px;
+  }
+  .mid_text h1 {
+    font-size: 30px;
+  }
+  .middle .text h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .mid_text h1 {
+    font-size: 25px;
+  }
+  .middle .text p {
+    font-size: 14px;
+  }
+  footer .lastest img {
+    max-width: 20%;
   }
 }/*# sourceMappingURL=main.css.map */

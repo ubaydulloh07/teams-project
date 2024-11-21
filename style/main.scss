@@ -167,10 +167,13 @@
     }
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 680px){
+   
+body{
     .continer{
         width: 720px;
-        height: auto;
+        height: 3000px;
+        
         nav{
             position: absolute;
             top: 0;
@@ -206,9 +209,14 @@
             position: relative;
             font-size: 30px;
             right: 100px;
+           flex-direction: column;
         }
         p{
             font-size: 12px;
+            position: relative;
+            font-size: 30px;
+            right: 100px;
+           flex-direction: column;
         }
 
         h1{
@@ -262,16 +270,25 @@
         height: auto;
        .lastest{
         position: relative;
-        left: 0;
+        left: 300px;
+        bottom: 500px;
+        justify-content: center;
         ul{
+            flex-direction: column;
             gap: 10px;
+            position: relative;
+        left: 300px;
+        align-items: center;
             li{
+                align-items: center;
                 a{
+                   align-items: center;
                     font-size: 14px;
                 }
             }
         }
     
     }
+}
 }
 }
